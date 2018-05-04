@@ -14,12 +14,14 @@ class Model {
     this.tableName = "producto";
   };
 
+  static get allowPublic() {
+    return true;
+  }
 
   test() {
     return Promise.resolve({})
   }
 }
 
-Model.public = true;
 
 module.exports = Model;
