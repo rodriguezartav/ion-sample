@@ -24,7 +24,6 @@ class Model {
     var user = parts[0];
     var repo = parts[1];
     var branchName = body.ref.split("refs/heads/")[1];
-    var token = "a05fca721678acacd505251b2b5c2d4279433bef"
 
     var params = {
       projectName: "apibuilder",
@@ -40,12 +39,6 @@ class Model {
           name: 'REQUIRE_KNEX',
           /* required */
           value: "true",
-          /* required */
-          type: "PLAINTEXT"
-        }, {
-          name: 'GIT_TOKEN',
-          /* required */
-          value: token,
           /* required */
           type: "PLAINTEXT"
         }, {
