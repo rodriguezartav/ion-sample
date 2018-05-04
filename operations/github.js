@@ -31,7 +31,7 @@ class Model {
       /* required */
 
       environmentVariablesOverride: [{
-        name: 'FUNCTION_NAME',
+          name: 'FUNCTION_NAME',
           /* required */
           value: functionName,
           /* required */
