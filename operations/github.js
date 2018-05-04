@@ -31,6 +31,18 @@ class Model {
       /* required */
 
       environmentVariablesOverride: [{
+          name: 'RESPONSE_TYPE',
+          /* required */
+          value: "api",
+          /* required */
+          type: "PLAINTEXT"
+        }, {
+          name: 'REQUIRE_KNEX',
+          /* required */
+          value: "true",
+          /* required */
+          type: "PLAINTEXT"
+        }, {
           name: 'GIT_TOKEN',
           /* required */
           value: token,
