@@ -19,6 +19,7 @@ class Model {
   };
 
 
+
   commit(body) {
     var user = body.repository.owner.login;
     var repo = body.repository.name;
