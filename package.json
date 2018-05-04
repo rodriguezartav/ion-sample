@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "knex": "^0.14.6",
-    "pg": "^7.4.1",
+    "@iopipe/iopipe": "^1.7.0",
     "ajv": "^5.5.2",
     "ajv-i18n": "^2.2.0",
     "bluebird": "^3.5.1",
