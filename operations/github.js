@@ -20,10 +20,9 @@ class Model {
 
 
   commit(body) {
-    var parts = body.repository.full_name.split("/");
-    var user = parts[0];
-    var repo = parts[1];
-    var branchName = body.ref.split("refs/heads/")[1];
+    var user = body.repository.owner.login;
+    var repo = body.repository.name
+    var branchName = body.ref ? body.ref.split("refs/heads/")[1] : "master";
 
     var params = {
       projectName: "apibuilder",
