@@ -23,5 +23,6 @@ class Model {
   }
 }
 
+Model.allowPublic = true;
 
 module.exports = Model;
