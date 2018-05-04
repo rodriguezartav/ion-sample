@@ -22,13 +22,21 @@ class Model {
   commit(body) {
     var user = body.repository.owner.login;
     var repo = body.repository.name;
+
     var branchName = body.ref ? body.ref.split("refs/heads/")[1] : "master";
+    var functionName = `${user}_${repo.replace("lambda-","")}_${branchName}`
 
     var params = {
       projectName: "apibuilder",
       /* required */
 
       environmentVariablesOverride: [{
+        name: 'FUNCTION_NAME',
+          /* required */
+          value: functionName,
+          /* required */
+          type: "PLAINTEXT"
+        }, {
           name: 'RESPONSE_TYPE',
           /* required */
           value: "api",
