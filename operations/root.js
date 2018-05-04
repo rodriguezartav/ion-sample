@@ -20,4 +20,6 @@ class Model {
   }
 }
 
+Model.public = true;
+
 module.exports = Model;
