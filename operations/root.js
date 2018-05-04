@@ -12,6 +12,7 @@ class Model {
     this.user = user;
     this.knex = knex;
     this.tableName = "producto";
+    this.allowPublic = true;
   };
 
   static get allowPublic() {
@@ -22,7 +23,5 @@ class Model {
     return Promise.resolve({})
   }
 }
-
-Model.allowPublic = true;
 
 module.exports = Model;
