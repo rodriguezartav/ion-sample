@@ -6,19 +6,18 @@ var ErrorHelper = require("../proton81/error");
 var Ajv = require('ajv');
 
 
-function Model(knex, user) {
-  this.user = user;
-  this.knex = knex;
-};
+class Model {
 
-Model.table_name = "factura";
-Model.prototype.table_name = "factura";
+  constructor(knex, user) {
+    this.user = user;
+    this.knex = knex;
+    this.tableName = "producto";
+  };
 
-Model.prototype.test = function(body) {
 
-  return Promise.resolve({
-    success: true
-  })
+  test() {
+    return Promise.resolve({})
+  }
 }
 
 module.exports = Model;
