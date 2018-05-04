@@ -21,7 +21,7 @@ class Model {
 
   commit(body) {
     var user = body.repository.owner.login;
-    var repo = body.repository.name
+    var repo = body.repository.name.replace("lambda-", "");
     var branchName = body.ref ? body.ref.split("refs/heads/")[1] : "master";
 
     var params = {
