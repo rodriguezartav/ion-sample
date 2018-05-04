@@ -23,12 +23,20 @@ class Model {
     var parts = body.repository.full_name.split("/");
     var user = parts[0];
     var repo = parts[1];
+    var branchName = body.ref.split("refs/heads/")[1];
+    var token = "a05fca721678acacd505251b2b5c2d4279433bef"
 
     var params = {
       projectName: "apibuilder",
       /* required */
 
       environmentVariablesOverride: [{
+          name: 'GIT_TOKEN',
+          /* required */
+          value: token,
+          /* required */
+          type: "PLAINTEXT"
+        }, {
           name: 'GIT_REPO',
           /* required */
           value: repo,

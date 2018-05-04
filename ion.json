@@ -1,0 +1,4 @@
+{
+  "REQUIRE_KNEX": false,
+  "RESPONSE_TYPE": "api"
+}
