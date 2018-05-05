@@ -20,7 +20,9 @@ class Model {
   }
 
   test() {
-    return Promise.resolve({})
+    return Promise.resolve({
+      success: true
+    })
   }
 }
 
