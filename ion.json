@@ -1,6 +1,6 @@
 {
   "ion": {
-    "REQUIRE_KNEX": "false",
+    "REQUIRE_KNEX": "true",
     "RESPONSE_TYPE": "api"
   }
 }
