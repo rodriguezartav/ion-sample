@@ -17,8 +17,8 @@ module.exports = {
       host: "org.cgpi5eyst5ag.us-east-1.rds.amazonaws.com",
       database: "nihu_staging",
       user: "ion",
-      password: process.env.DB_PASSWORD,
-      ssl: true
+      password: process.env.DB_PASSWORD
+
     },
   },
 
