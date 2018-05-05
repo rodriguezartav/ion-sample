@@ -11,7 +11,6 @@ class Model {
   constructor(knex, user) {
     this.user = user;
     this.knex = knex;
-    this.tableName = "producto";
   };
 
   get allowPublic() {
@@ -24,7 +23,5 @@ class Model {
     })
   }
 }
-
-
 
 module.exports = Model;
