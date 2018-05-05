@@ -12,10 +12,9 @@ class Model {
     this.user = user;
     this.knex = knex;
     this.tableName = "producto";
-    this.allowPublic = true;
   };
 
-  static get allowPublic() {
+  get allowPublic() {
     return true;
   }
 

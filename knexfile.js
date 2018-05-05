@@ -15,7 +15,7 @@ module.exports = {
     client: 'postgresql',
     connection: {
       host: "org.cgpi5eyst5ag.us-east-1.rds.amazonaws.com",
-      database: "nihu_staging",
+      database: "nihu-staging",
       user: "ion",
       password: process.env.DB_PASSWORD
 
