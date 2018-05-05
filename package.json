@@ -25,7 +25,7 @@
     "require-all": "^2.2.0",
     "superagent": "^3.8.2",
     "throw.js": "^3.0.1",
-    "dotenv": "^4.0.0",
+    "dotenv": "^4.0.0"
   },
   "devDependencies": {
     "jwt-simple": "^0.5.1",
